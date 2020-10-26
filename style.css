@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap'); 
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Pacifico', cursive;*/
+
+
+.coffee-list {
+  background-image: url("img/background.jpg");
+  background-size: cover ; /*contain - задней фон будет распределен на весь блок.  cover растягиваент картинку*/
+}
+
+  .coffee-item {
+    color: white; /*цвет текста с названием кофе*/
+    background-color: rgba(0, 0, 0, 0.7); /*цвет заднего фона */
+    margin: 15px 0; /*Отступ сверху вниз между чашками кофе*/
+    border-radius: calc(100px / 2); /*ОКРУГЛЕНИЕ ЗАДНИХ ЧЕРНЫХ ОКОШЕК ЗА ЧАШКАМИ*/
+    transition: background-color 300ms; /*скорость изменения подсветки заднего фона при наводе мыши*/
+    transition: all 300ms;
+    cursor: pointer; /*появляется палец при наводе на название кофе*/
+  }
+  
+  
+
+.coffee-item img {
+  height: 100px;
+  background-color: white; /*Задний фон картинок-чашек*/
+  border-radius: 50%; /*закругление белова круга чашек*/
+}
+
+.coffee-item span {
+  font-family: 'Pacifico', cursive; /*Указали шрифт который подгрузили ссылкой в самом верху, взяв из гугл фонтс*/
+  margin-left: 25px; /*сдвинули надписи левее*/
+  font-size: 25px; /*размер изменили шрифта*/
+}
+
+.coffee-item:hover {
+  background-color: rgba(50, 50, 50, 0.7); /*ПОДСВЕТКА ЗАДНЕГО ФОНА С НАЗВАНИЯМИ КОФЕ ПРИ НАВОДКЕ МЫШИ*/
+  transform: scale(1.05); /*при наведении мышки задний фон и текст увеличивается*/
+}
+
+.coffee-oper {
+  background-color: rgb(230, 230, 230); /*задний фон правой части*/
+  padding: 1rem; /*ДАННОЙ КОМАНДОЙ ПРАВАЯ ЧАСТЬ НЕМНОГО ОТЪЕХАЛА ОТ ВВЕРХА*/
+  
+}
+
+.display {
+  background-color: lightgreen; /*цвет заднего фона дисплея*/
+  border: 2px solid darkgreen; /*линии вокруг*/
+  box-sizing: border-box;
+  padding: 0.5rem; /*отступ*/
+  font-family: 'Open Sans', sans-serif; /*шрифт который вставлял изначально в самом вверху*/
+  
+}
+
+.cup-container {
+ margin-top: 2rem; 
+}
+
+.cup {
+  width: 100%;
+  display: none; /*этой командой убирает кружку*/
+  opacity: 0; /*прозрачность. 0 это невидимая. то есть если сверху он исчез и его место может занять что то, то тут он просто бдует невидим*/
+}
+  
+.atm {
+  width: 100%;
+}
+
+
+.change-container { /*Контейнер под кнопкой сдача*/
+  min-height: 5rem; /*его длина вниз*/
+  background-color: lightgreen; /*цвет*/
+  border: 2px solid black; 
+  border-radius: 0.5rem; /*ОКРУГЛЕНИЕ УГЛОВ*/
+  position: relative;
+}
+
+
+
