@@ -7,20 +7,20 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href='style.css'> <!--подключили файл style.css-->
+    <link rel="stylesheet" href='style.css'> 
     <title>Кофемашина</title>
   </head>
   <body>
-    <div class ="container"> <!--Картинки с кофе, ценой и названием-->
+    <div class ="container"> 
       <div class="row">
-        <div class="col-6 coffee-list d-flex flex-column justify-content-around"> <!--d-flex это флекс контейнеры, надпись d-flex и далее вписали для того, что бы при растягивание квадрата со значками кофе, значки кофе равномерно распределялись а неоставались на месте-->
-          <div class="coffee-item" onclick="makeCoffee('Американо', 50, this)"> <!--onclick="makeCoffee('Американо', 50)" это команда нажатия кнопки, так же для всех сниху, отображается название и цена в консоли-->
+        <div class="col-6 coffee-list d-flex flex-column justify-content-around"> 
+          <div class="coffee-item" onclick="makeCoffee('Американо', 50, this)"> 
             <img src="img/americano.png" alt="Американо">
             <span>Американо - 50руб.</span>
           </div>
-          <div class="coffee-item" onclick="makeCoffee('Каппучино', 73, this)"> <!--event это элемент события-->
-            <img src="img/cappuccino.png" alt="Капучино">
-            <span>Каппучино - 73руб.</span>
+          <div class="coffee-item" onclick="makeCoffee('капучино', 73, this)"> 
+            <img src="img/cappuccino.png" alt="капучино">
+            <span>капучино - 73руб.</span>
           </div>
           <div class="coffee-item" onclick="makeCoffee('Эспрессо', 61, this)">
             <img src="img/espresso.png" alt="Эспрессо">
@@ -55,7 +55,7 @@
           <div class="atm-container">
             <img src="img/bill_acc.png" alt="" class="atm">
           </div>
-          <button class="btn btn-primary btn-block my-2 change-button">Сдача</button> <!--вписали кнопку, btn-primary это цвет, а btn-block растянули её, что бы в HTML дистанцию сделать, можно писать команду m.. где Y это высота (X ширина).      onclick="alert("Получаем сдачу")" этой командой сделает действие на кнопку -->
+          <button class="btn btn-primary btn-block my-2 change-button">Сдача</button> 
           <div class="change-container">
             
           </div>
@@ -63,8 +63,8 @@
       </div>
     </div>
   </div>
-  <div class = "money"> <!--отдельный див куда мы вставили купюры-->
-    <img src="img/50rub.jpg" alt="" data-cost = '50'> <!--data-cost это вставка для JS. ЧТО БЫ НАЙТИ ЭТИ ОБЪЕКТЫ как class только лучше этим пользоваться если изначально класс не указан-->
+  <div class = "money"> 
+    <img src="img/50rub.jpg" alt="" data-cost = '50'> 
     <img src="img/100rub.jpg" alt="" data-cost = '100'>
     <img src="img/500rub.jpg" alt="" data-cost = '500'>
   </div>
